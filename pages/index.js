@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Banner from "../components/Banner";
+import Examples from "../components/Examples";
 import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
 import Packages from "../components/Packages";
@@ -24,6 +25,7 @@ export default function Home() {
         <Steps />
         <div className="fluid g-2">
           <Packages />
+          <Examples />
         </div>
       </main>
     </div>

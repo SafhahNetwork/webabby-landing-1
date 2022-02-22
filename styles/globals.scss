@@ -295,8 +295,7 @@ a {
 .packages {
   width: 94%;
   max-width: $max-width;
-  min-height: 100vw;
-  margin: 6rem auto;
+  margin: 6rem auto 12rem;
   text-align: center;
   color: $black;
 
@@ -337,7 +336,7 @@ a {
     right: 1rem;
     top: 1rem;
     line-height: 1.6em;
-    font-size: .9rem;
+    font-size: 0.9rem;
     font-weight: 800;
     padding: 0 1rem;
   }
@@ -387,6 +386,20 @@ a {
   .sup {
     text-align: center;
     margin-top: 1em;
+  }
+}
+
+// Examples
+.examples {
+  max-width: $max-width;
+  width: 96%;
+  margin: auto;
+
+  h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 1rem 0 1.6em;
+    text-align: center;
   }
 }
 
