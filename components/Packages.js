@@ -56,7 +56,7 @@ const Package = (p) => {
         <p className="time">{p.time}</p>
       </div>
       {p.className == "premium" ? (
-        <button className="cta cta-3">Book A Call</button>
+        <button className="cta cta-3">Contact Us</button>
       ) : (
         <button className="cta">Order Now</button>
       )}

@@ -19,7 +19,7 @@ const Navbar = () => {
           <Link href="/home">Home</Link>
           <Link href="/portfolio">Portfolio</Link>
           <Link href="/pricing">Pricing</Link>
-          <button className="cta">Book a call</button>
+          <button className="cta">Contact Us</button>
         </nav>
       </div>
     </div>

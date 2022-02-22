@@ -20,7 +20,7 @@ const Hero = () => {
           client see you!
         </p>
         <div className="actions">
-          <button className="cta">Book a call</button>
+          <button className="cta">Contact Us</button>
           <button className="cta cta-2">Pricing</button>
         </div>
       </div>
