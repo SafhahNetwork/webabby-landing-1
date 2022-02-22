@@ -79,7 +79,7 @@ h2,
 h3,
 h4,
 h5,
-.plus {
+.price {
   font-weight: 600;
   font-family: "Plus Jakarta Sans";
   line-height: 1.25;
@@ -109,6 +109,7 @@ a {
   justify-content: space-between;
   max-width: $max-width;
   margin: auto;
+  z-index: 100;
 
   .nav {
     font-size: 1.2rem;
@@ -117,9 +118,10 @@ a {
     font-size: 1.2rem;
     font-weight: 700;
     max-height: 2.8em;
+    background: $c3;
 
     & > * {
-      margin: -0.25em 0 0 2.4em;
+      margin: -0.25em -0.25em 0 2.4em;
     }
     & > a {
       transition-duration: 200ms;
@@ -308,8 +310,9 @@ a {
   .list {
     display: flex;
     justify-content: center;
-    margin: 2rem auto;
+    margin: 6rem auto 2rem;
     gap: 3rem;
+
     @media (max-width: 768px) {
       flex-direction: column;
       align-items: center;
@@ -321,31 +324,55 @@ a {
   flex: 1;
   overflow: hidden;
   max-width: 360px;
+  text-align: left;
+  padding: 2rem 2.6rem;
+  background: $c3;
 
-  .top {
-    border-top-left-radius: 30rem;
-    border-top-right-radius: 30rem;
-    height: 11rem;
-    line-height: 11.6rem;
-    font-size: 2.2rem;
-    font-weight: 600;
-    text-transform: uppercase;
-  }
-
-  &.basic {
-    .top {
-      background: $c3;
-    }
-  }
   &.plus {
-    .top {
-      background: $c4;
+    background: $c1;
+    color: $white;
+    transform: scale(1.2);
+    padding: 2rem 2rem;
+    h3 {
+      color: $c4;
+    }
+    @media (max-width: 768px) {
+      transform: none;
     }
   }
-  &.premium {
-    .top {
-      background: $c2;
-    }
+
+  h3 {
+    color: $c1;
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 0.8em;
+  }
+  .sub {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 1.4em;
+  }
+  ul {
+    margin-bottom: 1.6rem;
+    list-style: none;
+  }
+  .info {
+    margin-bottom: 1.6rem;
+  }
+  .price {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .time {
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+  .cta {
+    width: 100%;
+  }
+  .sup {
+    text-align: center;
+    margin-top: 1em;
   }
 }
 
@@ -377,6 +404,12 @@ a {
   border-color: $c3;
 }
 
+.cta-3 {
+  background: $c3;
+  color: $black;
+  border-color: $black;
+}
+
 .g-1 {
   background: hsla(277, 75%, 84%, 1);
   background: linear-gradient(
@@ -389,9 +422,8 @@ a {
   background: hsla(277, 75%, 84%, 1);
   background: linear-gradient(
     0deg,
-    hsla(277, 75%, 84%, 1) 0%,
-    hsla(262, 98%, 47%, 1) 30%,
-    hsla(262, 98%, 47%, 1) 70%,
+    #fff 0%,
+    #fff 70%,
     hsla(262, 98%, 47%, 0) 100%
   );
 }

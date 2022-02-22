@@ -9,27 +9,30 @@ const Packages = () => {
       <div className="list">
         <Package
           className="basic"
-          title="One design"
-          sub="One high quality custom graphic design."
+          title="Starter"
+          sub="One high quality custom design."
           price="$199"
           time="1-3 business days"
           items={["hi", "hi", "hi"]}
+          sup="25% off for logo design"
         />
         <Package
           className="plus"
-          title="Plus"
-          sub="A full set of custom graphic design."
+          title="Pro"
+          sub="A full set of custom graphic designs."
           price="$999"
           time="7-14 business days"
           items={["hi", "hi", "hi"]}
+          sup="Premium support included"
         />
         <Package
           className="premium"
-          title="premium"
+          title="Premium"
           sub="Custom job, tell us what you need."
           price="Custom"
-          time="Depends"
+          time="Get a quote"
           items={["hi", "hi", "hi"]}
+          sup=""
         />
       </div>
     </div>
@@ -42,17 +45,22 @@ const Package = (p) => {
   return (
     <div className={"package " + p.className}>
       <h3>{p.title}</h3>
-      <p>{p.sub}</p>
+      <p className="sub">{p.sub}</p>
       <ul>
         {p.items.map((e, i) => {
           return <li key={i}>{e}</li>;
         })}
       </ul>
-      <div>
-        <div>{p.price}</div>
-        <div>{p.time}</div>
+      <div className="info">
+        <p className="price">{p.price}</p>
+        <p className="time">{p.time}</p>
       </div>
-      <button className="cta">Book A Call</button>
+      {p.className == "premium" ? (
+        <button className="cta cta-3">Book A Call</button>
+      ) : (
+        <button className="cta">Order Now</button>
+      )}
+      <p className="sup">{p.sup}</p>
     </div>
   );
 };
