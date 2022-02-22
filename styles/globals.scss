@@ -327,6 +327,20 @@ a {
   text-align: left;
   padding: 2rem 2.6rem;
   background: $c3;
+  position: relative;
+
+  .pop {
+    background: $c4;
+    color: $black;
+    border-radius: 100px;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    line-height: 1.6em;
+    font-size: .9rem;
+    font-weight: 800;
+    padding: 0 1rem;
+  }
 
   &.plus {
     background: $c1;

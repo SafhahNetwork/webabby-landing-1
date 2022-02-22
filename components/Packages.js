@@ -44,6 +44,7 @@ export default Packages;
 const Package = (p) => {
   return (
     <div className={"package " + p.className}>
+      {p.className == "plus" ? <div className="pop">Popular</div> : ""}
       <h3>{p.title}</h3>
       <p className="sub">{p.sub}</p>
       <ul>
