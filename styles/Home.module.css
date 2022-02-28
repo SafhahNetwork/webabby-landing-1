@@ -6,4 +6,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 160px;
+}
+@media (max-width: 600px) {
+  .main {
+    padding-top: 120px;
+  }
 }

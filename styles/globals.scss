@@ -143,6 +143,11 @@ a {
       margin-top: 1rem;
     }
   }
+  @media (max-width: 600px) {
+    .nav {
+      display: none;
+    }
+  }
 }
 
 // Hero
@@ -391,15 +396,19 @@ a {
 
 // Examples
 .examples {
-  max-width: $max-width;
+  max-width: $max-width / 1.25;
   width: 96%;
   margin: auto;
 
   h2 {
-    font-size: 2rem;
+    font-size: 2.6rem;
     font-weight: 800;
-    margin: 1rem 0 1.6em;
-    text-align: center;
+    margin: 1rem 0 0.4em;
+    text-align: left;
+  }
+  .subhead {
+    margin: .4em 0 3.4em;
+    font-size: 1.2rem;
   }
 }
 
