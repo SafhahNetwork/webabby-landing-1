@@ -11,6 +11,7 @@ const Hero = () => {
           height="400"
           objectFit="contain"
           alt=""
+          priority
         />
       </div>
       <div className="content">

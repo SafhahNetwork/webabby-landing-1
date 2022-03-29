@@ -27,7 +27,7 @@ export default function Home() {
         <Banner />
         <Welcome />
         <Steps />
-        <Script src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js"></Script>
+        <Script src="/tp.widget.bootstrap.min.js"></Script>
         <div
           className="trustpilot-widget"
           data-locale="en-US"

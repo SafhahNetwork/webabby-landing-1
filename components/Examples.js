@@ -1,4 +1,5 @@
 import Gallery from "react-photo-gallery";
+import Image from "next/image";
 
 function importAll(r) {
   let images = {};
@@ -21,12 +22,22 @@ const Examples = () => {
     };
   }
   console.log(examples);
+
+  const imageRenderer = ({ index, left, top, key, photo }) => (
+    <Image
+      key={key}
+      margin={"10px"}
+      index={index}
+      src={photo}
+    />
+  )
+
   return (
     <div className="examples">
       <h2>Design that makes a difference.</h2>
       <p className="subhead">Check out our work, and let us now your opinion!</p>
       <div className="list">
-        <Gallery photos={examples} direction={"column"} margin={"10"} />;
+        <Gallery photos={examples} direction={"column"} margin={"10"} renderImage={imageRenderer} />;
       </div>
     </div>
   );
